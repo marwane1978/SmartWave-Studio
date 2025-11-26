@@ -19,6 +19,7 @@ SmartWave Studio est un studio digital qui propose :
 - Vite
 - Tailwind CSS
 - Base44
+- Replit
 - Vercel
 - SEO optimisé
 
