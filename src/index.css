@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Style global simple pour commencer */
+body {
+  font-family: sans-serif;
+  background-color: #f5f5f5;
+}
