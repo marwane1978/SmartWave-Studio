@@ -1,5 +1,6 @@
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -21,19 +22,19 @@ export default function Home() {
           </p>
 
           <div className="flex justify-center gap-4 mt-10">
-            <a
-              href="#contact"
+            <Link
+              to="/contact"
               className="bg-white text-blue-600 font-semibold py-3 px-6 rounded-lg shadow hover:shadow-xl transition"
             >
               Demander un devis
-            </a>
+            </Link>
 
-            <a
-              href="/services"
+            <Link
+              to="/services"
               className="bg-blue-500/30 border border-white text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-500/40 transition"
             >
               Voir nos services
-            </a>
+            </Link>
           </div>
         </div>
       </main>
@@ -80,6 +81,61 @@ export default function Home() {
               </h3>
               <p className="text-gray-700">
                 Automatisation des tâches, bots WhatsApp/Instagram, et intégrations intelligentes.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* ================= WHY US SECTION ================= */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-6 text-center">
+
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">
+            Pourquoi choisir SmartWave ?
+          </h2>
+
+          <p className="text-gray-600 text-lg max-w-3xl mx-auto mb-12">
+            Nous apportons à votre entreprise des solutions professionnelles,
+            modernes et accessibles, adaptées à vos besoins réels.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+
+            {/* Avantage 1 */}
+            <div className="p-8 bg-white rounded-2xl shadow hover:shadow-xl transition">
+              <div className="text-blue-600 text-4xl mb-4">⚡</div>
+              <h3 className="text-xl font-semibold mb-3">Rapidité</h3>
+              <p className="text-gray-700 text-sm">
+                Développement rapide et efficace, sans compromettre la qualité.
+              </p>
+            </div>
+
+            {/* Avantage 2 */}
+            <div className="p-8 bg-white rounded-2xl shadow hover:shadow-xl transition">
+              <div className="text-purple-600 text-4xl mb-4">🎯</div>
+              <h3 className="text-xl font-semibold mb-3">Solutions adaptées</h3>
+              <p className="text-gray-700 text-sm">
+                Nous analysons vos besoins et proposons des solutions sur mesure.
+              </p>
+            </div>
+
+            {/* Avantage 3 */}
+            <div className="p-8 bg-white rounded-2xl shadow hover:shadow-xl transition">
+              <div className="text-cyan-600 text-4xl mb-4">💡</div>
+              <h3 className="text-xl font-semibold mb-3">Technologies modernes</h3>
+              <p className="text-gray-700 text-sm">
+                Nous utilisons les outils les plus récents pour garantir performance et sécurité.
+              </p>
+            </div>
+
+            {/* Avantage 4 */}
+            <div className="p-8 bg-white rounded-2xl shadow hover:shadow-xl transition">
+              <div className="text-green-600 text-4xl mb-4">🤝</div>
+              <h3 className="text-xl font-semibold mb-3">Accompagnement humain</h3>
+              <p className="text-gray-700 text-sm">
+                Vous n’êtes jamais seul : support continu et assistance rapide.
               </p>
             </div>
 
