@@ -13,7 +13,7 @@ export default function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1500); // durée totale du loader
+    }, 1800); // durée du splash-screen
 
     return () => clearTimeout(timer);
   }, []);
@@ -23,7 +23,7 @@ export default function App() {
       {loading ? (
         <Loader />
       ) : (
-        <div className="animate-fadeInSlow">
+        <div className="animate-fadeInSmooth">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
