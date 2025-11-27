@@ -297,6 +297,42 @@ export default function Home() {
             </div>
 
           </div>
+
+        </div>
+      </section>
+
+      {/* ================= FINAL CTA SECTION ================= */}
+      <section className="py-24 bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-500 text-white text-center">
+        <div className="max-w-4xl mx-auto px-6">
+
+          <h2 className="text-4xl font-bold mb-6">
+            Prêt à booster votre business avec SmartWave ? 🚀
+          </h2>
+
+          <p className="text-lg text-white/90 max-w-2xl mx-auto mb-10">
+            Discutons de votre projet et construisons ensemble une solution moderne,
+            simple et performante pour votre entreprise.
+          </p>
+
+          <div className="flex flex-col md:flex-row justify-center gap-6">
+
+            <a
+              href="https://wa.me/212767777768"
+              target="_blank"
+              className="px-8 py-4 bg-green-500 text-white font-semibold rounded-xl shadow hover:bg-green-600 transition text-lg"
+            >
+              🚀 Discuter sur WhatsApp
+            </a>
+
+            <Link
+              to="/contact"
+              className="px-8 py-4 bg-white text-blue-edge-700 font-semibold rounded-xl shadow hover:bg-gray-100 transition te-lg"
+            >
+              ✉️ Contactez-nous
+            </Link>
+
+          </div>
+
         </div>
       </section>
 
@@ -324,7 +360,7 @@ export default function Home() {
                 Proposez-vous des solutions ERP / POS complètes ?
               </summary>
               <p className="mt-3 text-gray-700">
-                Oui, SmartWave fournit des solutions professionnelles de gestion stock, 
+                Oui, SmartWave fournit des solutions professionnelles pour la gestion stock, 
                 facturation, caisse, ventes, inventaires…
               </p>
             </details>
