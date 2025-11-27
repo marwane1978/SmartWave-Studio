@@ -1,109 +1,90 @@
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
 
-export default function Services() {
+export default function Contact() {
   return (
     <>
       <Header />
 
-      {/* HERO / TITRE */}
+      {/* HERO */}
       <section className="bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-500 text-white py-32 px-6 text-center">
-        <h1 className="text-5xl font-bold mb-6">Nos Services</h1>
+        <h1 className="text-5xl font-bold mb-6">Contactez-nous</h1>
         <p className="text-lg max-w-3xl mx-auto text-white/90">
-          SmartWave Studio vous accompagne avec des solutions digitales modernes,
-          simples et accessibles, adaptées aux besoins de votre entreprise.
+          Une question ? Un projet ? SmartWave Studio est à votre écoute pour vous
+          accompagner dans votre transformation digitale.
         </p>
       </section>
 
-      {/* GRID DES SERVICES */}
+      {/* FORMULAIRE DE CONTACT */}
       <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12">
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+          {/* Formulaire */}
+          <div className="bg-white p-8 rounded-2xl shadow-lg">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Envoyez-nous un message</h2>
 
-            {/* Service 1 */}
-            <div className="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition">
-              <div className="text-4xl mb-4">🌐</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Sites web professionnels
-              </h3>
-              <p className="text-gray-700">
-                Création de sites modernes, rapides et responsives pour mettre en
-                valeur votre activité. Vitrine, blog, e-commerce… tout est possible.
-              </p>
-            </div>
+            <form className="space-y-6">
 
-            {/* Service 2 */}
-            <div className="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition">
-              <div className="text-4xl mb-4">📦</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                ERP / POS — Gestion complète
-              </h3>
-              <p className="text-gray-700">
-                Solutions de gestion stock, caisse, facturation, suivi des ventes et
-                inventaires, adaptées aux commerces et PME.
-              </p>
-            </div>
+              <div>
+                <label className="block text-gray-700 font-medium mb-2">Nom complet</label>
+                <input
+                  type="text"
+                  placeholder="Votre nom"
+                  className="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300"
+                  required
+                />
+              </div>
 
-            {/* Service 3 */}
-            <div className="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition">
-              <div className="text-4xl mb-4">🤖</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Automatisation & Bots IA
-              </h3>
-              <p className="text-gray-700">
-                Bots WhatsApp/Instagram, réponses automatiques, suivi client et
-                intégrations intelligentes pour réduire le travail manuel.
-              </p>
-            </div>
+              <div>
+                <label className="block text-gray-700 font-medium mb-2">Adresse email</label>
+                <input
+                  type="email"
+                  placeholder="email@example.com"
+                  className="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300"
+                  required
+                />
+              </div>
 
-            {/* Service 4 */}
-            <div className="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition">
-              <div className="text-4xl mb-4">💼</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Applications métiers
-              </h3>
-              <p className="text-gray-700">
-                Développement d’applications sur mesure pour automatiser vos processus
-                internes ou offrir de nouveaux services à vos clients.
-              </p>
-            </div>
+              <div>
+                <label className="block text-gray-700 font-medium mb-2">Message</label>
+                <textarea
+                  placeholder="Votre message..."
+                  rows="5"
+                  className="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300"
+                  required
+                ></textarea>
+              </div>
 
-            {/* Service 5 */}
-            <div className="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition">
-              <div className="text-4xl mb-4">📊</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Tableaux de bord & Data Analytics
-              </h3>
-              <p className="text-gray-700">
-                Création de dashboards PowerBI / Google Data Studio pour suivre vos
-                ventes, votre activité et votre performance en temps réel.
-              </p>
-            </div>
+              <button
+                type="submit"
+                className="w-full py-3 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700 transition"
+              >
+                Envoyer ✉️
+              </button>
 
-            {/* Service 6 */}
-            <div className="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition">
-              <div className="text-4xl mb-4">🔧</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Maintenance & Support
-              </h3>
-              <p className="text-gray-700">
-                Assistance continue, mises à jour, optimisation, hébergement,
-                résolution des problèmes techniques et accompagnement longue durée.
-              </p>
-            </div>
+            </form>
 
-          </div>
-
-          {/* CTA */}
-          <div className="text-center mt-16">
+            {/* WhatsApp CTA */}
             <a
               href="https://wa.me/212767777768"
               target="_blank"
-              className="px-8 py-4 bg-blue-600 text-white text-lg font-semibold rounded-xl shadow hover:bg-blue-700 transition"
+              className="block text-center mt-6 px-6 py-3 bg-green-500 text-white rounded-lg shadow hover:bg-green-600 transition"
             >
-              Discuter de votre projet 📞
+              Contacter via WhatsApp 💬
             </a>
+          </div>
+
+          {/* Carte Google Maps */}
+          <div className="rounded-2xl overflow-hidden shadow-lg h-[400px]">
+            <iframe
+              title="map"
+              width="100%"
+              height="100%"
+              frameBorder="0"
+              style={{ border: 0 }}
+              src="https://www.google.com/maps/embed/v1/place?q=Rabat,+Morocco&key=YOUR_API_KEY"
+              allowFullScreen
+            ></iframe>
           </div>
 
         </div>
