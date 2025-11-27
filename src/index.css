@@ -1,8 +1,85 @@
+/* ------------------------------------------------------
+   TAILWIND BASE
+-------------------------------------------------------- */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Optionnel : styles globaux */
-body {
-  @apply bg-white text-gray-900;
+/* ------------------------------------------------------
+   GLOBAL STYLE
+-------------------------------------------------------- */
+html, body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  background-color: #ffffff;
+  font-family: 'Inter', sans-serif;
 }
+
+/* ------------------------------------------------------
+   LOADER ANIMATIONS (fade-in, fade-out, spin)
+-------------------------------------------------------- */
+
+/* Fade-in + fade-out du loader */
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  15% { opacity: 1; }
+  85% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.animate-fadeInOut {
+  animation: fadeInOut 1.5s ease-in-out forwards;
+}
+
+/* Fade-in lent des pages après disparition du loader */
+@keyframes fadeInSlow {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fadeInSlow {
+  animation: fadeInSlow 0.8s ease-in-out forwards;
+}
+
+/* Rotation lente du cercle autour du logo */
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 1.4s linear infinite;
+}
+
+/* ------------------------------------------------------
+   OPTIONNEL — Effet de pulsation du logo (premium)
+-------------------------------------------------------- */
+
+@keyframes pulseSmooth {
+  0% { transform: scale(1); opacity: 0.85; }
+  50% { transform: scale(1.06); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.85; }
+}
+
+.animate-pulseSmooth {
+  animation: pulseSmooth 2s ease-in-out infinite;
+}
+
+/* ------------------------------------------------------
+   SCROLLBAR (Pro, minimal)
+-------------------------------------------------------- */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #7aa7ff;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #e5e7eb;
+}
+
+/* ------------------------------------------------------
+   FIN DU FICHIER
+-------------------------------------------------------- */
