@@ -1,18 +1,10 @@
 export default {
-  content: ["./index.html", "./src/**/*.{js,jsx}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,jsx,ts,tsx}",   // ← obligatoire pour compiler ton CSS
+  ],
   theme: {
-    extend: {
-      animation: {
-        "spin-slow": "spin 3s linear infinite",
-        "spin-reverse": "spin-reverse 5s linear infinite",
-      },
-      keyframes: {
-        "spin-reverse": {
-          from: { transform: "rotate(360deg)" },
-          to: { transform: "rotate(0deg)" },
-        },
-      }
-    },
+    extend: {},
   },
   plugins: [],
-};
+}
