@@ -1,9 +1,16 @@
 export default function Loader() {
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-white z-50">
-      <div className="flex flex-col items-center">
-        <div className="w-16 h-16 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
-        <p className="mt-4 text-gray-700 font-semibold text-lg">Chargement...</p>
+    <div className="flex items-center justify-center h-screen bg-[#0B1120]">
+      <div className="relative flex items-center justify-center">
+        {/* Cercle animé */}
+        <div className="w-40 h-40 border-4 border-blue-500/30 border-t-blue-400 rounded-full animate-spin"></div>
+
+        {/* Logo */}
+        <img
+          src="/logo.png"
+          alt="SmartWave Logo"
+          className="absolute w-24 h-24 object-contain drop-shadow-lg"
+        />
       </div>
     </div>
   );
