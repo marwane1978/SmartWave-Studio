@@ -11,7 +11,7 @@ export default function Home() {
         description="SmartWave Studio propose la création de sites web modernes, ERP / POS, automatisation et solutions digitales professionnelles pour petites entreprises."
         keywords="site web Maroc, SmartWave, ERP POS Maroc, création site web, automatisation, développeur web Maroc"
         url="https://smart-wave-studio.com"
-        image="/assets/og-image.png"
+        image="/og-image.png"
       />
 
       <Header />
