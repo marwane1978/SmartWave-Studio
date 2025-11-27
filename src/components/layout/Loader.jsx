@@ -1,23 +1,19 @@
-import React from "react";
-
 export default function Loader() {
   return (
-    <div className="fixed inset-0 bg-white flex items-center justify-center z-50 opacity-0 animate-fadeInOut">
-      <div className="flex flex-col items-center justify-center">
+    <div className="fixed inset-0 flex items-center justify-center bg-gradient-to-br from-blue-900 via-purple-900 to-black animate-fadeInOut z-50">
 
-        {/* Cercle animé */}
-        <div className="relative w-24 h-24 mb-6">
-          <div className="absolute inset-0 border-4 border-blue-200 rounded-full"></div>
-          <div className="absolute inset-0 border-4 border-blue-500 border-t-transparent rounded-full animate-spin-slow"></div>
-        </div>
+      {/* Aura lumineuse */}
+      <div className="absolute w-64 h-64 bg-blue-500/20 blur-3xl rounded-full animate-pulseSmooth"></div>
 
-        {/* Logo */}
-        <img
-          src="/logo.png"
-          alt="SmartWave"
-          className="w-40 opacity-90 animate-pulse"
-        />
-      </div>
+      {/* Cercle animé */}
+      <div className="w-40 h-40 border-4 border-blue-400/40 rounded-full animate-spin-slow absolute"></div>
+
+      {/* Logo */}
+      <img
+        src="/logo.png"
+        alt="SmartWave Logo"
+        className="relative w-32 animate-pulseSmooth"
+      />
     </div>
   );
 }
