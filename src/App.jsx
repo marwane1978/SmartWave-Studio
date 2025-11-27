@@ -13,7 +13,7 @@ export default function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1200); // Loader ~1.2 sec
+    }, 1500); // durée totale du loader
 
     return () => clearTimeout(timer);
   }, []);
@@ -23,11 +23,13 @@ export default function App() {
       {loading ? (
         <Loader />
       ) : (
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        <div className="animate-fadeInSlow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
       )}
     </Router>
   );
