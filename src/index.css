@@ -5,6 +5,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 /* ------------------------------------------------------
    PAGE GLOBAL STYLE
 -------------------------------------------------------- */
@@ -16,11 +18,11 @@ html, body {
   font-family: 'Inter', sans-serif;
 }
 
-/* ------------------------------------------------------
-   🔵 SPLASH SCREEN ANIMATIONS
--------------------------------------------------------- */
 
-/* Fade-in puis fade-out */
+
+/* ------------------------------------------------------
+   🔵 SPLASH SCREEN — FADE-IN → FADE-OUT
+-------------------------------------------------------- */
 @keyframes fadeInOut {
   0% { opacity: 0; }
   15% { opacity: 1; }
@@ -32,7 +34,11 @@ html, body {
   animation: fadeInOut 1.8s ease-in-out forwards;
 }
 
-/* Contenu principal fade-in */
+
+
+/* ------------------------------------------------------
+   🔵 CONTENU PRINCIPAL — FADE-IN SMOOTH
+-------------------------------------------------------- */
 @keyframes fadeInSmooth {
   from { opacity: 0; transform: translateY(6px); }
   to { opacity: 1; transform: translateY(0); }
@@ -42,7 +48,11 @@ html, body {
   animation: fadeInSmooth 0.9s ease-out forwards;
 }
 
-/* Cercle rotation lente */
+
+
+/* ------------------------------------------------------
+   🔵 LOADER — CERCLE ROTATIF
+-------------------------------------------------------- */
 @keyframes spinSlow {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
@@ -52,7 +62,9 @@ html, body {
   animation: spinSlow 1.8s linear infinite;
 }
 
-/* Halo lumineux pulse */
+
+
+/* Halo lumineux (effet pulse autour du logo) */
 @keyframes pulseSmooth {
   0% { transform: scale(1); opacity: 0.6; }
   50% { transform: scale(1.15); opacity: 1; }
@@ -63,10 +75,11 @@ html, body {
   animation: pulseSmooth 2.4s ease-in-out infinite;
 }
 
-/* ------------------------------------------------------
-   🔵 LOADER BACKGROUND ANIMATION
--------------------------------------------------------- */
 
+
+/* ------------------------------------------------------
+   🔵 BACKGROUND ANIMÉ (Loader)
+-------------------------------------------------------- */
 @keyframes movingGradient {
   0% { background-position: 0% 0%; }
   50% { background-position: 100% 100%; }
@@ -79,17 +92,20 @@ html, body {
   animation: movingGradient 7s ease infinite;
 }
 
+
+
 /* ------------------------------------------------------
    SCROLLBAR PRO
 -------------------------------------------------------- */
 ::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-thumb { background: #7aa7ff; border-radius: 4px; }
 ::-webkit-scrollbar-track { background: #e5e7eb; }
-/* -------------------------------
-   FADE + BLUR → NET (EFFET CAMÉRA)
---------------------------------*/
 
-/* Animation de la page : flou → net + fade-in */
+
+
+/* ------------------------------------------------------
+   🔵 EFFET CAMÉRA — FADE + BLUR → NET
+-------------------------------------------------------- */
 @keyframes fadeBlurIn {
   0% {
     opacity: 0;
@@ -110,10 +126,12 @@ html, body {
 .animate-fadeBlurIn {
   animation: fadeBlurIn 1s ease-out forwards;
 }
-/* -------------------------------
-   TRANSITION ENTRE LES PAGES
---------------------------------*/
 
+
+
+/* ------------------------------------------------------
+   🔵 TRANSITION ENTRE PAGES
+-------------------------------------------------------- */
 @keyframes pageSwitch {
   0% {
     opacity: 0;
