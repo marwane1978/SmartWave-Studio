@@ -1,11 +1,19 @@
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
 import { Link } from "react-router-dom";
+import SEOHead from "../components/SEOHead";
 
 export default function Home() {
   return (
     <>
       <Header />
+<SEOHead
+  title="SmartWave Studio - Solutions Web & Digitales Professionnelles"
+  description="Création de sites web, ERP / POS, automations IA et solutions digitales modernes pour entreprises au Maroc."
+  keywords="SmartWave, site web Maroc, création site web, ERP POS, automatisation, développement web Maroc"
+  url="https://smart-wave-studio.com"
+  image="/assets/og-image.png"
+/>
 
       {/* ================= HERO SECTION ================= */}
       <main className="bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-500 text-white py-32 px-6">
