@@ -11,10 +11,9 @@ export default function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Le loader dure 1 seconde (tu peux changer)
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 1200); // Loader ~1.2 sec
 
     return () => clearTimeout(timer);
   }, []);
