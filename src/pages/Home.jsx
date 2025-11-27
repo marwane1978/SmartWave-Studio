@@ -36,6 +36,7 @@ export default function Home() {
               Voir nos services
             </Link>
           </div>
+
         </div>
       </main>
 
@@ -103,7 +104,6 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
 
-            {/* Avantage 1 */}
             <div className="p-8 bg-white rounded-2xl shadow hover:shadow-xl transition">
               <div className="text-blue-600 text-4xl mb-4">⚡</div>
               <h3 className="text-xl font-semibold mb-3">Rapidité</h3>
@@ -112,7 +112,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Avantage 2 */}
             <div className="p-8 bg-white rounded-2xl shadow hover:shadow-xl transition">
               <div className="text-purple-600 text-4xl mb-4">🎯</div>
               <h3 className="text-xl font-semibold mb-3">Solutions adaptées</h3>
@@ -121,7 +120,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Avantage 3 */}
             <div className="p-8 bg-white rounded-2xl shadow hover:shadow-xl transition">
               <div className="text-cyan-600 text-4xl mb-4">💡</div>
               <h3 className="text-xl font-semibold mb-3">Technologies modernes</h3>
@@ -130,12 +128,11 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Avantage 4 */}
             <div className="p-8 bg-white rounded-2xl shadow hover:shadow-xl transition">
               <div className="text-green-600 text-4xl mb-4">🤝</div>
               <h3 className="text-xl font-semibold mb-3">Accompagnement humain</h3>
               <p className="text-gray-700 text-sm">
-                Vous n’êtes jamais seul : support continu et assistance rapide.
+                Support continu et assistance rapide, avec une approche humaine.
               </p>
             </div>
 
@@ -157,7 +154,6 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
 
-            {/* Projet 1 */}
             <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
               <img 
                 src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800"
@@ -174,7 +170,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Projet 2 */}
             <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
               <img 
                 src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800"
@@ -191,7 +186,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Projet 3 */}
             <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
               <img 
                 src="https://images.unsplash.com/photo-1581093588401-22d70f7b3669?w=800"
@@ -203,14 +197,14 @@ export default function Home() {
                   Automatisation chatbot
                 </h3>
                 <p className="text-gray-600 mt-2 text-sm">
-                  Automatisation WhatsApp pour réponses automatiques + gestion demandes.
+                  Automatisation WhatsApp pour réponses automatiques +
+                  gestion des demandes.
                 </p>
               </div>
             </div>
 
           </div>
 
-          {/* CTA */}
           <div className="mt-12">
             <a
               href="https://wa.me/212767777768"
@@ -221,6 +215,46 @@ export default function Home() {
             </a>
           </div>
 
+        </div>
+      </section>
+
+      {/* ================= TESTIMONIALS SECTION ================= */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-6 text-center">
+
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">
+            Témoignages Clients
+          </h2>
+
+          <p className="text-gray-600 text-lg max-w-3xl mx-auto mb-12">
+            Ils nous ont fait confiance pour développer leurs solutions digitales.
+            Voici ce qu’ils disent de SmartWave Studio.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+            <div className="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition">
+              <p className="text-gray-700 italic mb-4">
+                “Excellent travail ! Mon site web est rapide et moderne.”
+              </p>
+              <h3 className="font-semibold text-gray-900">— Youssef, Entrepreneur</h3>
+            </div>
+
+            <div className="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition">
+              <p className="text-gray-700 italic mb-4">
+                “Le POS a révolutionné la gestion de mon commerce. Merci SmartWave !”
+              </p>
+              <h3 className="font-semibold text-gray-900">— Leila, Boutique Mode</h3>
+            </div>
+
+            <div className="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition">
+              <p className="text-gray-700 italic mb-4">
+                “Automatisation WhatsApp impeccable, super professionnelle.”
+              </p>
+              <h3 className="font-semibold text-gray-900">— Hamza, Services IT</h3>
+            </div>
+
+          </div>
         </div>
       </section>
 
