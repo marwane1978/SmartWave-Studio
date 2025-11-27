@@ -1,85 +1,87 @@
 /* ------------------------------------------------------
-   TAILWIND BASE
+   TAILWIND CORE
 -------------------------------------------------------- */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* ------------------------------------------------------
-   GLOBAL STYLE
+   PAGE GLOBAL STYLE
 -------------------------------------------------------- */
 html, body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  background-color: #ffffff;
+  background-color: white;
   font-family: 'Inter', sans-serif;
 }
 
 /* ------------------------------------------------------
-   LOADER ANIMATIONS (fade-in, fade-out, spin)
+   🔵 SPLASH SCREEN ANIMATIONS
 -------------------------------------------------------- */
 
-/* Fade-in + fade-out du loader */
+/* Fade-in puis fade-out */
 @keyframes fadeInOut {
   0% { opacity: 0; }
   15% { opacity: 1; }
   85% { opacity: 1; }
-  100% { opacity: 0; }
+  100% { opacity: 0; visibility: hidden; }
 }
 
 .animate-fadeInOut {
-  animation: fadeInOut 1.5s ease-in-out forwards;
+  animation: fadeInOut 1.8s ease-in-out forwards;
 }
 
-/* Fade-in lent des pages après disparition du loader */
-@keyframes fadeInSlow {
-  from { opacity: 0; }
-  to { opacity: 1; }
+/* Contenu principal fade-in */
+@keyframes fadeInSmooth {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-.animate-fadeInSlow {
-  animation: fadeInSlow 0.8s ease-in-out forwards;
+.animate-fadeInSmooth {
+  animation: fadeInSmooth 0.9s ease-out forwards;
 }
 
-/* Rotation lente du cercle autour du logo */
+/* Cercle rotation lente */
 @keyframes spinSlow {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
 
 .animate-spin-slow {
-  animation: spinSlow 1.4s linear infinite;
+  animation: spinSlow 1.8s linear infinite;
 }
 
-/* ------------------------------------------------------
-   OPTIONNEL — Effet de pulsation du logo (premium)
--------------------------------------------------------- */
-
+/* Halo lumineux pulse */
 @keyframes pulseSmooth {
-  0% { transform: scale(1); opacity: 0.85; }
-  50% { transform: scale(1.06); opacity: 1; }
-  100% { transform: scale(1); opacity: 0.85; }
+  0% { transform: scale(1); opacity: 0.6; }
+  50% { transform: scale(1.15); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.6; }
 }
 
 .animate-pulseSmooth {
-  animation: pulseSmooth 2s ease-in-out infinite;
+  animation: pulseSmooth 2.4s ease-in-out infinite;
 }
 
 /* ------------------------------------------------------
-   SCROLLBAR (Pro, minimal)
+   🔵 LOADER BACKGROUND ANIMATION
 -------------------------------------------------------- */
-::-webkit-scrollbar {
-  width: 8px;
+
+@keyframes movingGradient {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 100% 100%; }
+  100% { background-position: 0% 0%; }
 }
-::-webkit-scrollbar-thumb {
-  background: #7aa7ff;
-  border-radius: 4px;
-}
-::-webkit-scrollbar-track {
-  background: #e5e7eb;
+
+.bg-animated {
+  background: linear-gradient(135deg, #001f3f, #3b82f6, #7c3aed, #000000);
+  background-size: 300%;
+  animation: movingGradient 7s ease infinite;
 }
 
 /* ------------------------------------------------------
-   FIN DU FICHIER
+   SCROLLBAR PRO
 -------------------------------------------------------- */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-thumb { background: #7aa7ff; border-radius: 4px; }
+::-webkit-scrollbar-track { background: #e5e7eb; }
