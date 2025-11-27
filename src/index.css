@@ -85,3 +85,28 @@ html, body {
 ::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-thumb { background: #7aa7ff; border-radius: 4px; }
 ::-webkit-scrollbar-track { background: #e5e7eb; }
+/* -------------------------------
+   FADE + BLUR → NET (EFFET CAMÉRA)
+--------------------------------*/
+
+/* Animation de la page : flou → net + fade-in */
+@keyframes fadeBlurIn {
+  0% {
+    opacity: 0;
+    filter: blur(20px);
+    transform: scale(1.02);
+  }
+  50% {
+    opacity: 0.5;
+    filter: blur(12px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+    transform: scale(1);
+  }
+}
+
+.animate-fadeBlurIn {
+  animation: fadeBlurIn 1s ease-out forwards;
+}
