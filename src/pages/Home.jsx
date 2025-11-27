@@ -250,6 +250,56 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ================= WORK PROCESS SECTION ================= */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-6 text-center">
+
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">
+            Notre Processus de Travail
+          </h2>
+
+          <p className="text-gray-600 text-lg max-w-3xl mx-auto mb-12">
+            Un processus clair, rapide et efficace pour garantir un résultat professionnel.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
+
+            <div className="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition">
+              <div className="text-4xl mb-4">📝</div>
+              <h3 className="text-xl font-semibold mb-2">1. Analyse du besoin</h3>
+              <p className="text-gray-700 text-sm">
+                Nous discutons de votre projet, objectifs et besoins spécifiques.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition">
+              <div className="text-4xl mb-4">🎨</div>
+              <h3 className="text-xl font-semibold mb-2">2. Maquette & Validation</h3>
+              <p className="text-gray-700 text-sm">
+                Création d’un design préliminaire et validation avec vous.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition">
+              <div className="text-4xl mb-4">💻</div>
+              <h3 className="text-xl font-semibold mb-2">3. Développement</h3>
+              <p className="text-gray-700 text-sm">
+                Développement rapide, moderne et conforme aux standards.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition">
+              <div className="text-4xl mb-4">🚀</div>
+              <h3 className="text-xl font-semibold mb-2">4. Livraison & Support</h3>
+              <p className="text-gray-700 text-sm">
+                Livraison du projet + support technique et mises à jour.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
       {/* ================= FAQ SECTION ================= */}
       <section className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-6">
