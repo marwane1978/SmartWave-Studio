@@ -143,6 +143,87 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ================= PORTFOLIO SECTION ================= */}
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-6 text-center">
+
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">
+            Portfolio – Nos Réalisations
+          </h2>
+
+          <p className="text-gray-600 text-lg max-w-3xl mx-auto mb-12">
+            Quelques exemples de projets récents développés par SmartWave Studio.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+            {/* Projet 1 */}
+            <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+              <img 
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800"
+                alt="Projet site web"
+                className="w-full h-56 object-cover"
+              />
+              <div className="p-6 text-left">
+                <h3 className="text-xl font-semibold text-gray-900">
+                  Site web professionnel
+                </h3>
+                <p className="text-gray-600 mt-2 text-sm">
+                  Développement d’un site vitrine moderne et responsive.
+                </p>
+              </div>
+            </div>
+
+            {/* Projet 2 */}
+            <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+              <img 
+                src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800"
+                alt="ERP POS"
+                className="w-full h-56 object-cover"
+              />
+              <div className="p-6 text-left">
+                <h3 className="text-xl font-semibold text-gray-900">
+                  ERP / POS complet
+                </h3>
+                <p className="text-gray-600 mt-2 text-sm">
+                  Solution de gestion stock / caisse pour un client commerce.
+                </p>
+              </div>
+            </div>
+
+            {/* Projet 3 */}
+            <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+              <img 
+                src="https://images.unsplash.com/photo-1581093588401-22d70f7b3669?w=800"
+                alt="Automatisation"
+                className="w-full h-56 object-cover"
+              />
+              <div className="p-6 text-left">
+                <h3 className="text-xl font-semibold text-gray-900">
+                  Automatisation chatbot
+                </h3>
+                <p className="text-gray-600 mt-2 text-sm">
+                  Automatisation WhatsApp pour réponses automatiques + gestion demandes.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          {/* CTA */}
+          <div className="mt-12">
+            <a
+              href="https://wa.me/212767777768"
+              target="_blank"
+              className="px-8 py-3 bg-blue-600 text-white font-semibold rounded-xl shadow hover:bg-blue-700 transition"
+            >
+              Discuter de votre projet 📞
+            </a>
+          </div>
+
+        </div>
+      </section>
+
       <Footer />
     </>
   );
