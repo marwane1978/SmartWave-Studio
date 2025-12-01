@@ -9,9 +9,13 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
         {/* Logo */}
-        <Link to="/" className="text-2xl font-bold text-blue-600">
-          SmartWave
-        </Link>
+        <Link to="/" className="flex items-center gap-2">
+  <img 
+    src="/logo.png" 
+    alt="SmartWave Logo" 
+    className="h-10 w-auto"
+  />
+</Link>
 
         {/* Menu desktop */}
         <nav className="hidden md:flex items-center gap-10 text-gray-700 font-medium">
