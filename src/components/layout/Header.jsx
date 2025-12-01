@@ -6,22 +6,34 @@ export default function Header() {
 
   return (
     <header className="bg-white shadow-md fixed top-0 left-0 w-full z-50 h-20 flex">
-  <div className="w-full flex justify-between items-center px-6">
+      <div className="w-full flex justify-between items-center px-6">
 
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3 py-1">
-  <img 
-    src="/logo.png" 
-    alt="SmartWave Logo" 
-    className="w-36 md:w-38 h-auto object-contain"
-  />
-</Link>
+          <img 
+            src="/logo.png" 
+            alt="SmartWave Logo" 
+            className="w-36 md:w-38 h-auto object-contain"
+          />
+        </Link>
 
         {/* Menu desktop */}
         <nav className="hidden md:flex items-center gap-10 text-gray-700 font-medium">
-          <Link to="/" className="hover:text-blue-600">Accueil</Link>
-          <Link to="/services" className="hover:text-blue-600">Services</Link>
-          <Link to="/contact" className="hover:text-blue-600">Contact</Link>
+
+          <Link to="/" className="relative group">
+            Accueil
+            <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+          </Link>
+
+          <Link to="/services" className="relative group">
+            Services
+            <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+          </Link>
+
+          <Link to="/contact" className="relative group">
+            Contact
+            <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+          </Link>
 
           {/* Bouton WhatsApp */}
           <a
