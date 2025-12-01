@@ -13,7 +13,7 @@ export default function Header() {
   <img 
     src="/logo.png" 
     alt="SmartWave Logo" 
-    className="w-36 md:w-40 h-auto object-contain"
+    className="w-36 md:w-38 h-auto object-contain"
   />
 </Link>
 
