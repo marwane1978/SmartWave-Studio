@@ -5,8 +5,8 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow-md fixed top-0 left-0 w-full z-50 h-20 flex items-center">
-      <div className="max-w-7xl mx-auto px-6 py-2 flex justify-between items-center">
+    <header className="bg-white shadow-md fixed top-0 left-0 w-full z-50 h-20 flex">
+  <div className="w-full flex justify-between items-center px-6">
 
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3 py-1">
