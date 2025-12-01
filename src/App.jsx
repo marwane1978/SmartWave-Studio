@@ -1,9 +1,6 @@
+// src/App.jsx
 import { useState, useEffect } from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route
-} from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 
 import Home from "./pages/Home";
@@ -18,7 +15,7 @@ export default function App() {
 
   useEffect(() => {
     const t1 = setTimeout(() => setLoading(false), 800); // durée du loader
-    const t2 = setTimeout(() => setFade(true), 50);      // active l'effet page-fade
+    const t2 = setTimeout(() => setFade(true), 50);      // effet de fade
 
     return () => {
       clearTimeout(t1);
@@ -28,19 +25,17 @@ export default function App() {
 
   return (
     <HelmetProvider>
-      <Router>
-        {loading ? (
-          <Loader />
-        ) : (
-          <div className={`page-fade ${fade ? "page-fade-active" : ""}`}>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/services" element={<Services />} />
-              <Route path="/contact" element={<Contact />} />
-            </Routes>
-          </div>
-        )}
-      </Router>
+      {loading ? (
+        <Loader />
+      ) : (
+        <div className={`page-fade ${fade ? "page-fade-active" : ""}`}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
+      )}
     </HelmetProvider>
   );
 }
