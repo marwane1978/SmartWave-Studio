@@ -9,7 +9,9 @@ export async function getPortfolio() {
 }
 
 export async function getServices() {
-  return fetch(`${API_BASE}?endpoint=services`).then(res => res.json());
+  return fetch(
+    "https://app.base44.com/api/v1/apps/690fe6be32d8f70ac82e0272/functions/publicApi?endpoint=services"
+  ).then(res => res.json());
 }
 
 export async function sendContactForm(data) {
