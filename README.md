@@ -6,7 +6,7 @@ SmartWave Studio est un studio digital qui propose :
 - ERP / POS / gestion de stock
 - Solutions pour magasins et petites entreprises
 
-## 🎯 Objectif du site
+## 🎯 Objectif du site 
 
 - Présenter les services de SmartWave
 - Montrer des exemples (portfolio)
